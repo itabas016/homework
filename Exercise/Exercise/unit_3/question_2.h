@@ -18,7 +18,7 @@ unsigned long fun(unsigned long  n)
 	return x;
 }
 
-main()
+void question_2()
 {
 	unsigned long n = -1;
 	while (n > 99999999 || n < 0)

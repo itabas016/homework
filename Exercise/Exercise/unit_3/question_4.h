@@ -20,7 +20,7 @@ int Fib(int n)
 		return Fib(n - 2) + Fib(n - 1);
 	}
 }
-main()
+void question_4()
 {
 	int i = 0;
 	for (i = 0; i <= 30; i++)

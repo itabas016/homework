@@ -17,7 +17,7 @@ int fun(int  *s, int  n)
 	return  j;
 }
 
-main()
+void question_1()
 {
 	int  a[N], n, num = 0, i;
 	do

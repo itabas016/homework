@@ -15,7 +15,7 @@ int fun(int n, int xx[M][M])
 	return s;
 
 }
-main()
+void question_3()
 {
 	int aa[M][M] = { { 1,2,3,4,5 },{ 4,3,2,1,0 },{ 6,7,8,9,0 },{ 9,8,7,6,5 },{ 3,4,5,6,7 } };
 	printf("\nThe sum of all elements on 2 diagnals is %d.", fun(M, aa));
