@@ -147,6 +147,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="HelloWorld.c" />
+    <ClCompile Include="unit_3\question_1.h" />
+    <ClCompile Include="unit_3\question_2.h" />
+    <ClCompile Include="unit_3\question_3.h" />
+    <ClCompile Include="unit_3\question_4.h" />
+    <ClCompile Include="unit_3\question_5.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="unit_1\question_1.h" />
+    <ClInclude Include="unit_1\question_2.h" />
+    <ClInclude Include="unit_1\question_3.h" />
+    <ClInclude Include="unit_2\question_1.h" />
+    <ClInclude Include="unit_2\question_2.h" />
+    <ClInclude Include="unit_2\question_3.h" />
+    <ClInclude Include="unit_2\question_4.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

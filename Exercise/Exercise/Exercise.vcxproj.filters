@@ -13,10 +13,57 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\unit_1">
+      <UniqueIdentifier>{f57b4b50-d6bb-4c5e-bb72-13e37500528f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\unit_2">
+      <UniqueIdentifier>{ce24e0b7-be4e-4026-9ae5-cdbbb44c156e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\unit_3">
+      <UniqueIdentifier>{c21cf0b7-a99b-41ea-ae00-7cc8e7af3edc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HelloWorld.c">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="unit_3\question_1.h">
+      <Filter>Source Files\unit_3</Filter>
+    </ClCompile>
+    <ClCompile Include="unit_3\question_2.h">
+      <Filter>Source Files\unit_3</Filter>
+    </ClCompile>
+    <ClCompile Include="unit_3\question_3.h">
+      <Filter>Source Files\unit_3</Filter>
+    </ClCompile>
+    <ClCompile Include="unit_3\question_4.h">
+      <Filter>Source Files\unit_3</Filter>
+    </ClCompile>
+    <ClCompile Include="unit_3\question_5.h">
+      <Filter>Source Files\unit_3</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="unit_1\question_1.h">
+      <Filter>Source Files\unit_1</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_1\question_2.h">
+      <Filter>Source Files\unit_1</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_1\question_3.h">
+      <Filter>Source Files\unit_1</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_2\question_1.h">
+      <Filter>Source Files\unit_2</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_2\question_2.h">
+      <Filter>Source Files\unit_2</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_2\question_3.h">
+      <Filter>Source Files\unit_2</Filter>
+    </ClInclude>
+    <ClInclude Include="unit_2\question_4.h">
+      <Filter>Source Files\unit_2</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
