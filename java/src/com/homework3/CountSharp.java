@@ -15,17 +15,15 @@ public class CountSharp {
         // TODO Auto‐generated method stub
 
         int i=0, s=0;
+
         System.out.println("Please input data: ");
         BufferedReader buff = new BufferedReader(new InputStreamReader(System.in));
-
         char c = (char)(buff.read());
 
         while (c != SHARP){
             s ++;
             c = (char)(buff.read());
-            if (c == SHARP) break;
-            System.out.println("Input characters: " + s);
         }
-
+        System.out.println("Input characters count is: " + s);
     }
 }
