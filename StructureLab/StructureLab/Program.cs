@@ -1,0 +1,117 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace StructureLab
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            SequenceListTest();
+        }
+
+        static void SequenceListTest()
+        {
+            Console.WriteLine("########顺序表测试开始...########");
+            Console.WriteLine();
+            Console.WriteLine("初始化顺序表(最大长度10)[a,b,c,d,e,f,g]");
+            Console.WriteLine();
+
+            SequenceList<string> seq = new SequenceList<string>(10);
+            seq.Append("a");
+            seq.Append("b");
+            seq.Append("c");
+            seq.Append("d");
+            seq.Append("e");
+            seq.Append("f");
+            seq.Append("g");
+            Console.WriteLine("########顺序表初始化结束.########");
+            Console.WriteLine();
+
+            Console.WriteLine("当前顺序表元素是：" + seq.ToString());
+            Console.WriteLine();
+
+            Console.WriteLine("######测试顺序表插入[元素前和元素后]...######");
+            Console.WriteLine();
+
+            Console.WriteLine("在第1个元素a前面插入A: ");
+            seq.InsertBefore("A", 0);
+            Console.WriteLine("执行结果：" + seq.ToString());
+            Console.WriteLine();
+
+            Console.WriteLine("在最后1个元素g前面插入G: ");
+            seq.InsertBefore("G", seq.Last);
+            Console.WriteLine("执行结果：" + seq.ToString());
+            Console.WriteLine();
+
+            Console.WriteLine("在第5个元素d后面插入E: ");
+            seq.InsertAfter("E", 4);
+            Console.WriteLine("执行结果：" + seq.ToString());
+            Console.WriteLine();
+
+            Console.WriteLine("当前顺序表元素是：" + seq.ToString());
+            Console.WriteLine("当前顺序表长度：" + seq.Count());
+            Console.WriteLine();
+
+            Console.WriteLine("在第1个元素A前面插入S: ");
+            seq.InsertBefore("S", 0);
+            Console.WriteLine("无法插入新元素，当前顺序表：" + seq.ToString());
+            Console.WriteLine();
+
+            Console.WriteLine("在最后1个元素g后面面插入Z: ");
+            seq.InsertBefore("Z", seq.Last);
+            Console.WriteLine("无法插入新元素，当前顺序表：" + seq.ToString());
+            Console.WriteLine();
+
+            Console.WriteLine("########测试顺序表查找...########");
+            Console.WriteLine();
+
+            Console.WriteLine("(注): 当前顺序表为[{0}]，共有{1}个元素.", seq.ToString(), seq.Count());
+            Console.WriteLine();
+
+            Console.WriteLine("查找第1个元素：");
+            Console.WriteLine(seq.GetItemAt(0));
+            Console.WriteLine();
+
+            Console.WriteLine("查找最后1个元素：");
+            Console.WriteLine(seq.GetItemAt(seq.Last));
+            Console.WriteLine();
+
+            Console.WriteLine("查找第5个元素：");
+            Console.WriteLine(seq.GetItemAt(4));
+            Console.WriteLine();
+
+            Console.WriteLine("查找倒数第3个元素：");
+            Console.WriteLine(seq.GetItemAt(seq.Last - 2));
+            Console.WriteLine();
+
+            Console.WriteLine("########测试顺序表删除...########");
+            Console.WriteLine();
+
+            Console.WriteLine("(注)：当前顺序表元素：" + seq.ToString());
+
+            Console.WriteLine("删除最后1个元素g: ");
+            seq.RemoveAt(seq.Last);
+            Console.WriteLine("执行结果：" + seq.ToString());
+            Console.WriteLine();
+
+            Console.WriteLine("删除第5个元素d: ");
+            seq.RemoveAt(4);
+            Console.WriteLine("执行结果：" + seq.ToString());
+            Console.WriteLine();
+
+            Console.WriteLine("删除倒数第3个元素e: ");
+            seq.RemoveAt(seq.Last - 2);
+            Console.WriteLine("执行结果：" + seq.ToString());
+            Console.WriteLine();
+            Console.WriteLine("最后顺序表元素：" + seq.ToString());
+
+
+            Console.ReadKey();
+        }
+
+    }
+}
