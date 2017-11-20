@@ -10,7 +10,28 @@ namespace StructureLab
 
         static void Main(string[] args)
         {
-            SequenceListTest();
+            Console.WriteLine("本项目包含顺序表和单链表两个测试...");
+            Console.WriteLine("(注)：0表示顺序表，1表示单链表");
+
+            var input = Int32.Parse(Console.ReadLine());
+
+            while (!input.Equals(0) && !input.Equals(1))
+            {
+                Console.WriteLine("输入有误，请重新输入...(0表示顺序表，1表示单链表)");
+                input = Int32.Parse(Console.ReadLine());
+            }
+
+            switch (input)
+            {
+                case 0:
+                    SequenceListTest();
+                    break;
+                case 1:
+                    LinkListTest();
+                    break;
+                default:
+                    break;
+            }
         }
 
         static void SequenceListTest()
@@ -109,6 +130,91 @@ namespace StructureLab
             Console.WriteLine();
             Console.WriteLine("最后顺序表元素：" + seq.ToString());
 
+
+            Console.ReadKey();
+        }
+
+        static void LinkListTest()
+        {
+            Console.WriteLine("########单链表测试开始...########");
+            Console.WriteLine();
+            Console.WriteLine("初始化单链表");
+            Console.WriteLine();
+
+            LinkList<string> seq = new LinkList<string>();
+            Console.WriteLine("创建头节点x:");
+            seq.Append("x");
+            Console.WriteLine();
+
+            Console.WriteLine("在头元素处插入w:");
+            seq.InsertBefore("w", 0);
+            Console.WriteLine();
+
+            Console.WriteLine("在头元素处插入v:");
+            seq.InsertBefore("v", 0);
+            Console.WriteLine();
+
+            Console.WriteLine("当前链表元素：" + seq.ToString());
+            Console.WriteLine();
+
+            Console.WriteLine("########单链表测试插入...########");
+            Console.WriteLine("(注：)当前链表元素：" + seq.ToString());
+            Console.WriteLine();
+
+            Console.WriteLine("向当前链表插入元素y:");
+            seq.Append("y");
+            Console.WriteLine("当前链表元素：" + seq.ToString());
+            Console.WriteLine();
+
+            Console.WriteLine("向当前链表插入元素Y:");
+            seq.Append("Y");
+            Console.WriteLine("当前链表元素：" + seq.ToString());
+            Console.WriteLine();
+            
+            Console.WriteLine("在链表元素Y前面插入元素X:");
+            seq.InsertBefore("X", seq.IndexOf("Y"));
+            Console.WriteLine("当前链表元素：" + seq.ToString());
+            Console.WriteLine();
+
+            Console.WriteLine("在链表元素Y后面面插入元素z:");
+            seq.InsertAfter("z", seq.IndexOf("Y"));
+            Console.WriteLine("当前链表元素：" + seq.ToString());
+            Console.WriteLine();
+
+            Console.WriteLine("########单链表测试查找...########");
+            Console.WriteLine("(注：)当前链表元素：" + seq.ToString());
+            Console.WriteLine();
+
+            Console.WriteLine("查找链表第二个元素:");
+            Console.WriteLine("查找结果： " + seq.GetItemAt(1));
+            Console.WriteLine();
+
+            Console.WriteLine("查找链表倒数第三个元素:");
+            Console.WriteLine("查找结果： " + seq.GetItemAt(seq.Count() - 3));
+            Console.WriteLine();
+
+            Console.WriteLine("查找链表元素z前面的一个元素:");
+            Console.WriteLine("查找结果： " + seq.GetItemAt(seq.IndexOf("z") - 1));
+            Console.WriteLine();
+
+            Console.WriteLine("查找链表元素x相邻的两个元素:");
+            Console.WriteLine("查找结果： 前一个元素是 {0}， 后一个元素是 {1}", seq.GetItemAt(seq.IndexOf("x") - 1), seq.GetItemAt(seq.IndexOf("x") + 1));
+            Console.WriteLine();
+
+            Console.WriteLine("########单链表测试删除...########");
+            Console.WriteLine();
+
+            Console.WriteLine("删除最后一个元素：");
+            seq.RemoveAt(seq.Count() - 1);
+            Console.WriteLine("当前链表元素：" + seq.ToString());
+            Console.WriteLine();
+
+            Console.WriteLine("删除第二个元素：");
+            seq.RemoveAt(1);
+            Console.WriteLine("当前链表元素：" + seq.ToString());
+            Console.WriteLine();
+
+            Console.WriteLine("最后链表元素：" + seq.ToString());
 
             Console.ReadKey();
         }
