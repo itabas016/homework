@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructureLab", "StructureLa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueStackLab", "QueueStackLab\QueueStackLab.csproj", "{AD5C2BBD-3E44-4121-AFA5-857B0A35C53A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindSortLab", "FindSortLab\FindSortLab.csproj", "{B202A771-4E1C-4AFF-84FF-13B4A68741CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindLab", "FindSortLab\FindLab.csproj", "{B202A771-4E1C-4AFF-84FF-13B4A68741CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
