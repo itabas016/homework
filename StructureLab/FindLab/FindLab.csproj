@@ -7,8 +7,8 @@
     <ProjectGuid>{B202A771-4E1C-4AFF-84FF-13B4A68741CF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FindSortLab</RootNamespace>
-    <AssemblyName>FindSortLab</AssemblyName>
+    <RootNamespace>FindLab</RootNamespace>
+    <AssemblyName>FindLab</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
